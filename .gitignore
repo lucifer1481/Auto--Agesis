@@ -1,0 +1,23 @@
+# ROS
+build/
+install/
+log/
+.ros/
+
+# Python
+__pycache__/
+*.pyc
+dbot-env/
+.env
+
+# OS
+.DS_Store
+*.swp
+*.log
+
+# AI / Models (optional if large)
+*.pt
+*.onnx
+
+# Colcon
+colcon*

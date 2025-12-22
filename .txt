@@ -1,0 +1,120 @@
+# 0) Optional: confirm AMCL’s reset service
+ros2 service list | grep -i reinitialize_global_localization || echo "Reset service missing!"
+
+# 1) Mute anything that might be sending 0 velocity (teleop/joy)
+pkill -f teleop_twist_joy     || true
+pkill -f 'ros2 run joy'       || pkill -f joy_node || true
+
+# 2) Scatter AMCL’s particles over the whole map
+ros2 service call /reinitialize_global_localization std_srvs/srv/Empty "{}"
+
+# 3) Spin in place via the muxed JOY input (so it forwards to /diff_cont/cmd_vel_unstamped)
+#    If your twist_mux listens on 'cmd_vel_joy' (it does), publish there:
+ros2 topic pub /cmd_vel_joy geometry_msgs/msg/Twist "{angular: {z: 0.3}}" -r 10 &
+SPIN_PID=$!
+
+# 4) Let it rotate ~15 seconds to see a full 360° of scan features
+sleep 60
+kill $SPIN_PID
+
+# 5) Hard stop (zero twist)
+ros2 topic pub /cmd_vel_joy geometry_msgs/msg/Twist "{}" -1
+
+# 6) Optional: show the current localized pose once
+ros2 topic echo /amcl_pose --once
+
+ros2 launch dbot joystick.launch.py
+
+
+
+
+
+
+
+
+
+# === Kidnapped-robot relocalization (10 Hz lidar) ===
+# Run this while AMCL + map_server/nav2 are up and twist_mux is routing cmd_vel_joy -> /diff_cont/cmd_vel_unstamped
+
+# 0) Sanity checks (optional)
+ros2 node list | grep -i amcl || echo "AMCL not running!"
+ros2 service list | grep -i /reinitialize_global_localization || echo "Reset service missing!"
+
+# 1) Mute anything publishing joystick teleop (prevents 0-twists from overriding spin)
+pkill -f teleop_twist_joy     || true
+pkill -f 'ros2 run joy'       || pkill -f joy_node || true
+# If you launch joystick via a launch file, kill it too:
+pkill -f 'dbot.*joystick.launch.py' || true
+
+# 2) Scatter AMCL particles over the whole map
+ros2 service call /reinitialize_global_localization std_srvs/srv/Empty "{}"
+
+# 3) Spin in place through twist_mux JOY input (nice & slow for 10 Hz lidar)
+# Target: ~0.20 rad/s for ~25 s (≈2+ full turns, ~1–2° per scan)
+ros2 topic pub /cmd_vel_joy geometry_msgs/msg/Twist "{angular: {z: 0.20}}" -r 10 &
+SPIN_PID=$!
+
+# 4) Let it rotate to gather features and let AMCL resample/converge
+sleep 100
+kill $SPIN_PID
+
+# 5) Hard stop
+ros2 topic pub /cmd_vel_joy geometry_msgs/msg/Twist "{}" -1
+
+# 6) Peek the pose once (optional)
+ros2 topic echo /amcl_pose --once
+
+# 7) Bring joystick back (in background so your terminal stays free)
+#    Change this line if your joystick launch file has a different path/name.
+ros2 launch dbot joystick.launch.py 
+
+
+
+
+
+#stop lidar data
+ros2 service call /stop_motor std_srvs/srv/Empty "{}"
+
+
+
+
+
+# Helper: convert yaw->quaternion z,w in bash
+yaw_to_quat() {
+  local yaw="$1"
+  # z = sin(yaw/2), w = cos(yaw/2)
+  python3 - <<PY
+import math
+yaw = float("$yaw")
+print(f"{math.sin(yaw/2)} {math.cos(yaw/2)}")
+PY
+}
+
+send_nav_goal() {
+  local x="$1" y="$2" yaw="$3"
+  read z w < <(yaw_to_quat "$yaw")
+  ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose \
+  "{pose: {header: {frame_id: map}, pose: {position: {x: $x, y: $y, z: 0.0}, orientation: {z: $z, w: $w}}}}" \
+  --feedback
+}
+
+# Waypoints: x y yaw
+WAYPOINTS=(
+  "3.39  -0.377  0.00247"
+  "4.82  -6.92   0.00247"
+  "1.94  -6.24   0.00247"
+  "1.73  -4.99   0.00247"
+  "-1.36 -5.19   0.00638"
+  "2.33  -2.70   0.00247"
+)
+
+# Loop forever
+while true; do
+  for wp in "${WAYPOINTS[@]}"; do
+    set -- $wp
+    echo "➡️  Going to: x=$1, y=$2, yaw=$3"
+    send_nav_goal "$1" "$2" "$3" || echo "⚠️ goal command failed"
+    # small pause between goals
+    sleep 2
+  done
+done
