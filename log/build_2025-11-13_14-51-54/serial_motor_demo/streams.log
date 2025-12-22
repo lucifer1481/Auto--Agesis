@@ -1,0 +1,18 @@
+[0.574s] Invoking command in '/home/lucifer/dev_ws/build/serial_motor_demo': PYTHONPATH=/home/lucifer/dev_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/serial_motor_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/serial_motor_demo/build --no-deps symlink_data
+[0.758s] running develop
+[0.885s] running egg_info
+[0.885s] writing serial_motor_demo.egg-info/PKG-INFO
+[0.885s] writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+[0.885s] writing entry points to serial_motor_demo.egg-info/entry_points.txt
+[0.885s] writing requirements to serial_motor_demo.egg-info/requires.txt
+[0.885s] writing top-level names to serial_motor_demo.egg-info/top_level.txt
+[0.888s] reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[0.889s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[0.890s] running build_ext
+[0.891s] Creating /home/lucifer/dev_ws/install/serial_motor_demo/lib/python3.10/site-packages/serial-motor-demo.egg-link (link to .)
+[0.891s] Installing driver script to /home/lucifer/dev_ws/install/serial_motor_demo/lib/serial_motor_demo
+[0.891s] Installing gui script to /home/lucifer/dev_ws/install/serial_motor_demo/lib/serial_motor_demo
+[0.891s] 
+[0.891s] Installed /home/lucifer/dev_ws/build/serial_motor_demo
+[0.892s] running symlink_data
+[0.910s] Invoked command in '/home/lucifer/dev_ws/build/serial_motor_demo' returned '0': PYTHONPATH=/home/lucifer/dev_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/serial_motor_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/serial_motor_demo/build --no-deps symlink_data

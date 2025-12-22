@@ -1,0 +1,27 @@
+[0.009s] Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+[0.042s] Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+[0.051s] Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot
+[0.057s] -- Install configuration: ""
+[0.057s] -- Execute custom install script
+[0.058s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/empty.yaml
+[0.058s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/description/inertial_macros.xacro
+[0.064s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/robot.urdf.xacro
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/robot_core.xacro
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/rsp.launch.py
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/worlds/empty.world
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/package_run_dependencies/dbot
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/parent_prefix_path/dbot
+[0.065s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.sh
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.dsv
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.bash
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.sh
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.zsh
+[0.066s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.dsv
+[0.067s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/package.dsv
+[0.074s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/packages/dbot
+[0.074s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig.cmake
+[0.075s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig-version.cmake
+[0.075s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/package.xml
+[0.077s] Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot

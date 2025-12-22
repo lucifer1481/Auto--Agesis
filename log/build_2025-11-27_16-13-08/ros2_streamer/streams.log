@@ -1,0 +1,23 @@
+[0.598s] Invoking command in '/home/lucifer/dev_ws/build/ros2_streamer': PYTHONPATH=/home/lucifer/dev_ws/build/ros2_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/ros2_streamer/build --no-deps symlink_data
+[0.804s] running develop
+[0.959s] running egg_info
+[0.959s] creating ros2_streamer.egg-info
+[0.959s] writing ros2_streamer.egg-info/PKG-INFO
+[0.959s] writing dependency_links to ros2_streamer.egg-info/dependency_links.txt
+[0.959s] writing entry points to ros2_streamer.egg-info/entry_points.txt
+[0.959s] writing requirements to ros2_streamer.egg-info/requires.txt
+[0.960s] writing top-level names to ros2_streamer.egg-info/top_level.txt
+[0.960s] writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+[0.961s] reading manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+[0.961s] writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+[0.962s] running build_ext
+[0.962s] Creating /home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages/ros2-streamer.egg-link (link to .)
+[0.963s] 
+[0.963s] Installed /home/lucifer/dev_ws/build/ros2_streamer
+[0.963s] running symlink_data
+[0.963s] creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index
+[0.963s] creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index
+[0.964s] creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/lucifer/dev_ws/build/ros2_streamer/resource/ros2_streamer -> /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/lucifer/dev_ws/build/ros2_streamer/package.xml -> /home/lucifer/dev_ws/install/ros2_streamer/share/ros2_streamer
+[0.987s] Invoked command in '/home/lucifer/dev_ws/build/ros2_streamer' returned '0': PYTHONPATH=/home/lucifer/dev_ws/build/ros2_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/ros2_streamer/build --no-deps symlink_data

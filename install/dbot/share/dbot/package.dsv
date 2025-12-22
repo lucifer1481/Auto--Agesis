@@ -1,0 +1,8 @@
+source;share/dbot/hook/cmake_prefix_path.ps1
+source;share/dbot/hook/cmake_prefix_path.dsv
+source;share/dbot/hook/cmake_prefix_path.sh
+source;share/dbot/local_setup.bash
+source;share/dbot/local_setup.dsv
+source;share/dbot/local_setup.ps1
+source;share/dbot/local_setup.sh
+source;share/dbot/local_setup.zsh

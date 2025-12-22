@@ -1,0 +1,47 @@
+[0.010s] Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucifer/dev_ws/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+[0.070s] Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucifer/dev_ws/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+[0.079s] Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucifer/dev_ws/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot
+[0.084s] -- Install configuration: ""
+[0.085s] -- Execute custom install script
+[0.086s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/drive_bot.rviz
+[0.086s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/empty.yaml
+[0.086s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/config/gaz_ros2_stl_use_sim.yaml
+[0.093s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/gazebo_params.yaml
+[0.093s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/joystick.yaml
+[0.093s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/main.rviz
+[0.093s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/config/map.rviz
+[0.100s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/config/mapper_params_online_async.yaml
+[0.107s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/my_controllers.yaml
+[0.107s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/config/view_bot.rviz
+[0.107s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/camera.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/face.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/gazebo_control.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/inertial_macros.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/lidar.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/robot.urdf.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/robot_core.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/description/ros2_control.xacro
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/camera.launch.py
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/joystick.launch.py
+[0.108s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/launch_sim.launch.py
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/rplidar.launch.py
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/rsp.launch.py
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/worlds/123.world
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/worlds/empty.world
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/worlds/obstacle.world
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/package_run_dependencies/dbot
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/parent_prefix_path/dbot
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.sh
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.sh
+[0.110s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.dsv
+[0.110s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.bash
+[0.110s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.sh
+[0.110s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.zsh
+[0.110s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.dsv
+[0.110s] -- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/package.dsv
+[0.117s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/packages/dbot
+[0.117s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig.cmake
+[0.117s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig-version.cmake
+[0.118s] -- Up-to-date symlink: /home/lucifer/dev_ws/install/dbot/share/dbot/package.xml
+[0.119s] Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucifer/dev_ws/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot

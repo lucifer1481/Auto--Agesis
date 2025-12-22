@@ -1,0 +1,6 @@
+Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lucifer/dev_ws/src/dbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucifer/dev_ws/install/dbot
+Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lucifer/dev_ws/src/dbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lucifer/dev_ws/install/dbot
+Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucifer/dev_ws/build/dbot -- -j16 -l16
+Invoking command in '/home/lucifer/dev_ws/build/dbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot
+Invoked command in '/home/lucifer/dev_ws/build/dbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucifer/dev_ws/build/dbot

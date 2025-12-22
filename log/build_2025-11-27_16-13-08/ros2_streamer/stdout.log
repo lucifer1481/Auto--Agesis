@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating ros2_streamer.egg-info
+writing ros2_streamer.egg-info/PKG-INFO
+writing dependency_links to ros2_streamer.egg-info/dependency_links.txt
+writing entry points to ros2_streamer.egg-info/entry_points.txt
+writing requirements to ros2_streamer.egg-info/requires.txt
+writing top-level names to ros2_streamer.egg-info/top_level.txt
+writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+reading manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages/ros2-streamer.egg-link (link to .)
+
+Installed /home/lucifer/dev_ws/build/ros2_streamer
+running symlink_data
+creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index
+creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index
+creating /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index/packages
+symbolically linking /home/lucifer/dev_ws/build/ros2_streamer/resource/ros2_streamer -> /home/lucifer/dev_ws/install/ros2_streamer/share/ament_index/resource_index/packages
+symbolically linking /home/lucifer/dev_ws/build/ros2_streamer/package.xml -> /home/lucifer/dev_ws/install/ros2_streamer/share/ros2_streamer

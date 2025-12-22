@@ -1,0 +1,4 @@
+source;share/dbot/local_setup.bash
+source;share/dbot/local_setup.dsv
+source;share/dbot/local_setup.sh
+source;share/dbot/local_setup.zsh

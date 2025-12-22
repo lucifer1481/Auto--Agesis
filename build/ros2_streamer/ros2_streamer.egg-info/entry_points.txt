@@ -1,0 +1,3 @@
+[console_scripts]
+ros2_ffmpeg_streamer = ros2_streamer.ros2_ffmpeg_streamer:main
+

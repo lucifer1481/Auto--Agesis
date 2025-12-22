@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing ros2_streamer.egg-info/PKG-INFO
+writing dependency_links to ros2_streamer.egg-info/dependency_links.txt
+writing entry points to ros2_streamer.egg-info/entry_points.txt
+writing requirements to ros2_streamer.egg-info/requires.txt
+writing top-level names to ros2_streamer.egg-info/top_level.txt
+reading manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages/ros2-streamer.egg-link (link to .)
+Installing ros2_ffmpeg_streamer script to /home/lucifer/dev_ws/install/ros2_streamer/lib/ros2_streamer
+
+Installed /home/lucifer/dev_ws/build/ros2_streamer
+running symlink_data

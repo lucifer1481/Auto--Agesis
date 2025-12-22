@@ -1,0 +1,17 @@
+[0.623s] Invoking command in '/home/lucifer/dev_ws/build/ros2_streamer': PYTHONPATH=/home/lucifer/dev_ws/build/ros2_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/ros2_streamer/build --no-deps symlink_data
+[0.837s] running develop
+[0.992s] running egg_info
+[0.992s] writing ros2_streamer.egg-info/PKG-INFO
+[0.992s] writing dependency_links to ros2_streamer.egg-info/dependency_links.txt
+[0.992s] writing entry points to ros2_streamer.egg-info/entry_points.txt
+[0.992s] writing requirements to ros2_streamer.egg-info/requires.txt
+[0.992s] writing top-level names to ros2_streamer.egg-info/top_level.txt
+[0.994s] reading manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+[0.994s] writing manifest file 'ros2_streamer.egg-info/SOURCES.txt'
+[0.995s] running build_ext
+[0.995s] Creating /home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages/ros2-streamer.egg-link (link to .)
+[0.996s] Installing ros2_ffmpeg_streamer script to /home/lucifer/dev_ws/install/ros2_streamer/lib/ros2_streamer
+[0.996s] 
+[0.996s] Installed /home/lucifer/dev_ws/build/ros2_streamer
+[0.996s] running symlink_data
+[1.023s] Invoked command in '/home/lucifer/dev_ws/build/ros2_streamer' returned '0': PYTHONPATH=/home/lucifer/dev_ws/build/ros2_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucifer/dev_ws/install/ros2_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lucifer/dev_ws/build/ros2_streamer/build --no-deps symlink_data

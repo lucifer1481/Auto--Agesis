@@ -1,0 +1,45 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lucifer/dev_ws/build/dbot
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/config/empty.yaml
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/description/robot.urdf.xacro
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/launch/rsp.launch.py
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/worlds/empty.world
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/package_run_dependencies/dbot
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/parent_prefix_path/dbot
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.sh
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.sh
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/environment/path.dsv
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.bash
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.sh
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.zsh
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/local_setup.dsv
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/package.dsv
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/ament_index/resource_index/packages/dbot
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig.cmake
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/cmake/dbotConfig-version.cmake
+-- Symlinking: /home/lucifer/dev_ws/install/dbot/share/dbot/package.xml

@@ -1,0 +1,1 @@
+/home/lucifer/dev_ws/build/dbot/ament_cmake_core/dbotConfig-version.cmake
