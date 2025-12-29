@@ -1,0 +1,37 @@
+left motor:
+     violet --> red --> motor + --> out1
+     black --> black --> motor - --> out2
+     blue --> black --> encoder vcc
+     red --> blue --> encoder gnd
+     green --> green --> encoder A --> D3
+     brown --> white --> encoder B --> D2
+
+right motor:
+     violet --> gray --> motor + --> out3
+     black --> yellow --> motor - --> out4
+     blue --> blue --> encoder vcc
+     red --> gray --> encoder gnd
+     green --> white --> encoder A --> A4
+     brown --> orange --> encoder B --> A5
+     
+ardrino connection:
+    left motor:
+         encoder A --> D2
+         encoder B --> D3
+         
+    right motor:
+
+         encoder A --> A4
+         encoder B --> A5
+    Motor Driver:
+        in1 --> D10
+        in2 --> D6
+        in3 --> D9
+        in4 --> D5
+        ena --> D13
+        enb --> D12
+        
+
+    
+     
+     

@@ -1,0 +1,39 @@
+
+Colcon building  should in the dev_ws or robot_ directry
+colcon build --symlink-install 
+
+
+Twist mux for remapping
+ros2 run twist_mux twist_mux --ros-args --params-file ./src/dbot/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
+
+Rviz
+rviz2 -d /home/lucifer/dev_ws/main.rviz
+
+Nav2 for creating the map
+ros2 launch dbot Nav2_launch.launch.py use_sim_time:=false
+
+Joystick
+ros2 launch dbot joystick.launch.py
+
+Amcl for localisation
+ros2 launch dbot amcl_launch.launch.py   map:=./test.yaml   use_sim_time:=false   map_subscribe_transient_local:=true
+
+For gui
+ros2 run articubot_one_ui ui_node --ros-args -r cmd_vel:=diff_cont/cmd_vel_unstamped
+
+For Cloud
+cd dbot_bridge
+python3  dbot_bridge.py
+
+for the llm
+source dbot-env/bin/activate
+cd dbot-env
+python new.py
+
+In the pi
+ros2 launch dbot rplidar.launch.py
+ros2 launch dbot camera.launch.py
+ros2 launch dbot launch_robot.launch.py
+
+sudo fuser -k /dev/ttyUSB0
+
